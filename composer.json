@@ -6,12 +6,13 @@
     },
     "autoload": {
         "psr-4": {
-            "": "src"
+            "Training\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "": "tests"
+            "Training\\": "tests",
+            "Training\\Bootstrap\\": "tests/features/bootstrap"
         }
     },
     "config": {
