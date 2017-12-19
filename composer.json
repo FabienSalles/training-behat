@@ -1,6 +1,8 @@
 {
     "require-dev": {
         "behat/behat": "^3.4",
+        "behat/mink-extension": "^2.3",
+        "behat/mink-goutte-driver": "^1.2",
         "pds/skeleton": "^1.0",
         "squizlabs/php_codesniffer": "^2.3"
     },

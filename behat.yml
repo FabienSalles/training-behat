@@ -1,0 +1,11 @@
+default:
+  suites:
+    default:
+        contexts:
+          - Behat\MinkExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+      base_url:  'https://github.com/'
+      sessions:
+        default:
+          goutte: ~
