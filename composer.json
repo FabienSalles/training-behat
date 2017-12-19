@@ -1,0 +1,23 @@
+{
+    "require-dev": {
+        "pds/skeleton": "^1.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "bin-dir" : "bin"
+    },
+    "require": {
+        "behat/behat": "^3.4"
+    }
+}
