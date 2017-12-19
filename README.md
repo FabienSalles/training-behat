@@ -23,11 +23,9 @@ Une feature représente une fonctionnalité (Use case ou cas d'utilisation).
 Un fichier `.feature` devrait contenir une feature et plusieurs test case (case de tests) appelés `Scenario` avec Behat.
  
 ```
-Scenario: Add two numbers
-    Given I have the number 50 and the number 25
-    And I have a third number of 25
-    When I add them together
-    Then I should get 100 
+  Scenario: Add two numbers
+    When I add 50 to 25
+    Then I should get 75
 ```
 
 Si vous exécuter Behat `.bin/behat` dès maintenant avec ce premier scénario vous vous retrouverez avec l'erreur suivante :
