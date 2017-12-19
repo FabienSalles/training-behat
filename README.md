@@ -24,7 +24,7 @@ Un fichier `.feature` devrait contenir une feature et plusieurs test case (case 
  
 ```
   Scenario: Add two numbers
-    When I add 50 to 25
+    When I add 50.4 to 24.6
     Then I should get 75
 ```
 
@@ -55,7 +55,7 @@ class FeatureContext implements Context
 
 
     /**
-     * @When /^I add (\d+) to (\d+)$/
+     * @When /^I add (\d*(?:\.\d+)?) to (\d*(?:\.\d+)?)$/
      */
     public function iHaveTheNumberAndTheNumber(float $a, float $b)
     {
@@ -63,7 +63,7 @@ class FeatureContext implements Context
     }
 
     /**
-    * @Then /^I should get (\d+)$/
+    * @Then /^I should get (\d*(?:\.\d+)?)$/
     */
     public function iShouldGet($sum)
     {
