@@ -35,7 +35,7 @@ Si vous exécuter Behat `.bin/behat` dès maintenant avec ce premier scénario v
 ```
 
 Vous devez donc commencer par définir un context d'exécution. 
-Ce dernier se trouve par défaut dans le répertoire `feature/boostrap` :
+Ce dernier se trouve par défaut dans le répertoire `features/boostrap` :
 
 ```php
 <?php
