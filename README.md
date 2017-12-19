@@ -112,3 +112,20 @@ default:
 
 Goutte est une librairie PHP permettant de simuler un navigateur. Cette dernière n'interpète pas le Javascsript. 
 Si vous avez besoin d'interagir avec du JS, il vous faut changer de dépendance en utilisant par example PhamtomJS, Zombie, Selenium...
+
+Vous pouvez maintenant créer un fichier `github.feature` pour tester le site `github.com`
+
+Example :
+
+```yml
+Feature: GitHub
+  In order to use Github website
+  As a website user
+  I need to do the following scenarios
+
+  Scenario: Going to the GitHub HomePage
+    Given I am on "/"
+    Then I should see "Built for developers"
+```
+
+Exercice : Aller plus loin en recherchant le repository symfony/flex
