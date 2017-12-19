@@ -77,5 +77,38 @@ class FeatureContext implements Context
 
 Faire la même chose pour la soustraction, la multiplication et la division
 
+### Exercice 2 : Améliorer nos tests sur la classe Math
 
+Fixtures, ajout d'opérations...
 
+### Exercice 3 : Tester un site avec Behat et Mink
+ 
+ [Mink](https://github.com/Behat/MinkExtension) est une extension Behat ajoutant des contextes d'exécutions afin d'interagir principalement avec des applications web.
+ 
+ Installation :
+ 
+```
+composer require --dev behat/mink-extension
+composer require --dev behat/mink-goutte-driver
+```
+
+Configuration :
+
+Ajouter une configuration par défaut dans le fichier (`behat.yml`) :
+
+```yml
+default:
+  suites:
+    default:
+        contexts:
+          - Behat\MinkExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+      base_url:  'https://github.com/'
+      sessions:
+        default:
+          goutte: ~
+```
+
+Goutte est une librairie PHP permettant de simuler un navigateur. Cette dernière n'interpète pas le Javascsript. 
+Si vous avez besoin d'interagir avec du JS, il vous faut changer de dépendance en utilisant par example PhamtomJS, Zombie, Selenium...
